@@ -1,0 +1,53 @@
+.boton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  min-height: 40px;
+  padding: var(--space-2) var(--space-4);
+  border: 1px solid transparent;
+  border-radius: var(--radio-boton);
+  font-weight: 600;
+  white-space: nowrap;
+  cursor: pointer;
+  transition:
+    background-color 0.15s ease,
+    border-color 0.15s ease,
+    color 0.15s ease;
+}
+
+.boton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.primary {
+  background-color: var(--verde-600);
+  color: var(--blanco);
+}
+
+.primary:hover:not(:disabled) {
+  background-color: var(--verde-700);
+}
+
+.secondary {
+  background-color: var(--verde-50);
+  border-color: var(--verde-300);
+  color: var(--verde-800);
+}
+
+.secondary:hover:not(:disabled) {
+  background-color: var(--verde-400);
+  border-color: var(--verde-400);
+  color: var(--verde-900);
+}
+
+/* Acciones destructivas (eliminar): rojo de --alerta-alto. */
+.danger {
+  background-color: var(--alerta-alto);
+  color: var(--blanco);
+}
+
+.danger:hover:not(:disabled) {
+  filter: brightness(0.88);
+}

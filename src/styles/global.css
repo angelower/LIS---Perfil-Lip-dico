@@ -1,0 +1,83 @@
+/*
+ * Estilos globales: reset mínimo y escala tipográfica (docs/diseno/tipografia.md).
+ * Los estilos de cada componente van en su propio .module.css.
+ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: var(--fuente-principal);
+  font-size: var(--texto-body-tamano);
+  font-weight: var(--texto-body-peso);
+  line-height: var(--texto-body-altura);
+  color: var(--gris-900);
+  background-color: var(--gris-50);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  color: var(--verde-900);
+}
+
+h1 {
+  font-size: var(--texto-h1-tamano);
+  font-weight: var(--texto-h1-peso);
+  line-height: var(--texto-h1-altura);
+}
+
+h2 {
+  font-size: var(--texto-h2-tamano);
+  font-weight: var(--texto-h2-peso);
+  line-height: var(--texto-h2-altura);
+}
+
+h3 {
+  font-size: var(--texto-h3-tamano);
+  font-weight: var(--texto-h3-peso);
+  line-height: var(--texto-h3-altura);
+}
+
+p {
+  margin: 0;
+}
+
+small {
+  font-size: var(--texto-small-tamano);
+  font-weight: var(--texto-small-peso);
+  line-height: var(--texto-small-altura);
+}
+
+a {
+  color: var(--verde-700);
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+/* Los botones no heredan el color por defecto: así no aparece el negro del navegador. */
+button {
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--verde-500);
+  outline-offset: 2px;
+}

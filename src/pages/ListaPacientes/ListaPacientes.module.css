@@ -1,0 +1,17 @@
+/* Enlaces apilados para que la tabla de 10 columnas quepa con el sidebar expandido. */
+.acciones {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  font-weight: 600;
+}
+
+.fecha {
+  white-space: nowrap;
+}
+
+.nota {
+  color: var(--gris-600);
+  font-size: var(--texto-caption-tamano);
+  line-height: var(--texto-caption-altura);
+}

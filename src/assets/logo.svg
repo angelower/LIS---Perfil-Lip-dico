@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="168" height="40" viewBox="0 0 168 40" role="img" aria-label="LabClínico">
+  <!-- Logo de ejemplo: reemplázalo por el tuyo conservando el nombre del archivo. -->
+  <rect x="2" y="2" width="36" height="36" rx="10" fill="none" stroke="#ffffff" stroke-width="2.5"/>
+  <path d="M20 9c-4.5 6-7.5 10-7.5 14a7.5 7.5 0 0 0 15 0c0-4-3-8-7.5-14z" fill="#ffffff"/>
+  <text x="48" y="27" font-family="Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#ffffff">LabClínico</text>
+</svg>

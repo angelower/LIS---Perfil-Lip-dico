@@ -1,0 +1,32 @@
+.indicador {
+  display: inline-flex;
+  flex-direction: column;
+  min-width: 80px;
+  padding: var(--space-1) var(--space-2);
+  border-left: 4px solid var(--color-nivel);
+  border-radius: var(--radio-boton);
+  background-color: color-mix(in srgb, var(--color-nivel) 12%, transparent);
+}
+
+.bajo {
+  --color-nivel: var(--alerta-bajo);
+}
+
+.medio {
+  --color-nivel: var(--alerta-medio);
+}
+
+.alto {
+  --color-nivel: var(--alerta-alto);
+}
+
+.valor {
+  font-weight: 600;
+  color: var(--gris-900);
+}
+
+.nivel {
+  font-size: var(--texto-caption-tamano);
+  line-height: var(--texto-caption-altura);
+  color: var(--gris-900);
+}

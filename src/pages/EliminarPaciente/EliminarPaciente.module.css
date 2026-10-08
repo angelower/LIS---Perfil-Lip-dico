@@ -1,0 +1,33 @@
+.tarjeta {
+  max-width: 640px;
+}
+
+.detalle {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  align-items: center;
+  gap: var(--space-3) var(--space-5);
+  margin: 0;
+}
+
+.detalle dt {
+  color: var(--gris-600);
+  font-size: var(--texto-small-tamano);
+  font-weight: 600;
+  line-height: var(--texto-small-altura);
+}
+
+.detalle dd {
+  margin: 0;
+}
+
+.advertencia {
+  font-weight: 600;
+  color: var(--gris-900);
+}
+
+.acciones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}

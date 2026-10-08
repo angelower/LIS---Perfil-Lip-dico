@@ -1,0 +1,19 @@
+.textos {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.subtitulo {
+  color: var(--gris-600);
+}
+
+.tarjeta {
+  max-width: 480px;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}

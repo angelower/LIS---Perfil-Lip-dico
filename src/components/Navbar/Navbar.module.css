@@ -1,0 +1,41 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: var(--navbar-altura);
+  padding: 0 var(--space-5);
+  background-color: var(--verde-600);
+  color: var(--blanco);
+  box-shadow: var(--sombra-media);
+}
+
+/* El contorno de foco global (verde) no se vería sobre el fondo verde. */
+.navbar :focus-visible {
+  outline-color: var(--blanco);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  border-radius: var(--radio-estandar);
+}
+
+.logo img {
+  display: block;
+  height: 40px;
+}
+
+.sesion {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.usuario {
+  font-weight: 600;
+}

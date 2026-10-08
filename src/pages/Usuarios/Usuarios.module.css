@@ -1,0 +1,20 @@
+.rol {
+  display: inline-block;
+  padding: var(--space-1) var(--space-3);
+  border: 1px solid transparent;
+  border-radius: var(--radio-estandar);
+  font-size: var(--texto-small-tamano);
+  font-weight: 600;
+  line-height: var(--texto-small-altura);
+}
+
+.admin {
+  background-color: var(--verde-600);
+  color: var(--blanco);
+}
+
+.laboratorista {
+  border-color: var(--verde-300);
+  background-color: var(--verde-50);
+  color: var(--verde-800);
+}

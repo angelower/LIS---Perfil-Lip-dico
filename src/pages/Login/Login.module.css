@@ -1,0 +1,51 @@
+.pagina {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: var(--space-5);
+  background-color: var(--gris-50);
+}
+
+.tarjeta {
+  width: 100%;
+  max-width: 420px;
+  gap: var(--space-5);
+  box-shadow: var(--sombra-media);
+}
+
+/* El logo es blanco: se muestra sobre el verde de la marca, igual que en el navbar. */
+.marca {
+  display: flex;
+  justify-content: center;
+  padding: var(--space-4);
+  border-radius: var(--radio-estandar);
+  background-color: var(--verde-600);
+}
+
+.marca img {
+  display: block;
+  height: 40px;
+}
+
+.textos {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.ayuda {
+  font-size: var(--texto-small-tamano);
+  line-height: var(--texto-small-altura);
+  color: var(--gris-600);
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.boton {
+  width: 100%;
+}

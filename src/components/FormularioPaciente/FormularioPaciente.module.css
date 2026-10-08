@@ -1,0 +1,35 @@
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+/* min-width: 0 porque un fieldset, por defecto, no se encoge más que su contenido. */
+.grupo {
+  min-width: 0;
+  margin: 0;
+  padding: var(--space-4) var(--space-5) var(--space-5);
+  border: 1px solid var(--verde-200);
+  border-radius: var(--radio-estandar);
+}
+
+/* La leyenda funciona como título de sección dentro de la tarjeta: escala H3. */
+.leyenda {
+  padding: 0 var(--space-2);
+  color: var(--verde-900);
+  font-size: var(--texto-h3-tamano);
+  font-weight: var(--texto-h3-peso);
+  line-height: var(--texto-h3-altura);
+}
+
+.campos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr));
+  gap: var(--space-4);
+}
+
+.acciones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}

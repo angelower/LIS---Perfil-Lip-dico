@@ -1,0 +1,4 @@
+/* El formulario no necesita todo el ancho en pantallas grandes. */
+.tarjeta {
+  max-width: 880px;
+}

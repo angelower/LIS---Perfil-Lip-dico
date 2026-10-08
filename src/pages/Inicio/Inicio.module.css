@@ -1,0 +1,41 @@
+.tarjetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
+  gap: var(--space-5);
+}
+
+/* Borde izquierdo con el color de estado en las tarjetas por nivel. */
+.bajo,
+.medio,
+.alto {
+  border-left-width: 4px;
+}
+
+.bajo {
+  border-left-color: var(--alerta-bajo);
+}
+
+.medio {
+  border-left-color: var(--alerta-medio);
+}
+
+.alto {
+  border-left-color: var(--alerta-alto);
+}
+
+.cifra {
+  color: var(--verde-900);
+  font-size: var(--texto-h1-tamano);
+  font-weight: var(--texto-h1-peso);
+  line-height: var(--texto-h1-altura);
+}
+
+.descripcion {
+  color: var(--gris-600);
+}
+
+.nota {
+  color: var(--gris-600);
+  font-size: var(--texto-caption-tamano);
+  line-height: var(--texto-caption-altura);
+}

@@ -1,0 +1,52 @@
+/* En pantallas angostas la tabla se desplaza horizontalmente dentro de su caja. */
+.contenedor {
+  overflow-x: auto;
+  border: 1px solid var(--verde-200);
+  border-radius: var(--radio-estandar);
+  background-color: var(--blanco);
+}
+
+.tabla {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.titulo {
+  padding: var(--space-3) var(--space-4);
+  font-size: var(--texto-small-tamano);
+  line-height: var(--texto-small-altura);
+  color: var(--gris-600);
+  text-align: left;
+}
+
+.tabla th,
+.tabla td {
+  padding: var(--space-3);
+  text-align: left;
+  vertical-align: middle;
+}
+
+/* Los encabezados largos ("Colesterol total (mg/dL)") pueden partirse en dos líneas. */
+.tabla th {
+  border-bottom: 1px solid var(--verde-200);
+  background-color: var(--verde-50);
+  color: var(--verde-900);
+  font-size: var(--texto-small-tamano);
+  font-weight: 600;
+  line-height: var(--texto-small-altura);
+  vertical-align: bottom;
+}
+
+.tabla tbody tr:nth-child(even) {
+  background-color: var(--gris-100);
+}
+
+.tabla .derecha {
+  text-align: right;
+}
+
+.vacio {
+  padding: var(--space-6);
+  color: var(--gris-600);
+  text-align: center;
+}

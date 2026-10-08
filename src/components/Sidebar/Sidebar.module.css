@@ -1,0 +1,146 @@
+.sidebar {
+  position: sticky;
+  top: var(--navbar-altura);
+  z-index: 5;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  width: var(--sidebar-ancho-expandido);
+  height: calc(100vh - var(--navbar-altura));
+  padding: var(--space-3) 0;
+  background-color: var(--verde-800);
+  color: var(--blanco);
+  transition: width 0.2s ease;
+}
+
+.colapsada {
+  width: var(--sidebar-ancho-colapsado);
+}
+
+.sidebar :focus-visible {
+  outline-color: var(--blanco);
+  outline-offset: -2px;
+}
+
+/* Botón hamburguesa: centrado en los 64px del modo colapsado. */
+.alternar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin-left: var(--space-3);
+  padding: 0;
+  border: none;
+  border-radius: var(--radio-boton);
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.alternar:hover {
+  background-color: var(--verde-700);
+}
+
+.lista {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Borde izquierdo de 4px siempre presente (transparente) para que el ícono no se mueva al activarse. */
+.opcion {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  height: 44px;
+  padding: 0 var(--space-4);
+  border-left: 4px solid transparent;
+  color: var(--blanco);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.opcion:hover {
+  background-color: var(--verde-700);
+}
+
+.activa {
+  border-left-color: var(--verde-300);
+  background-color: var(--verde-700);
+  font-weight: 600;
+}
+
+/* Se atenúa con color y no con opacity, para no atenuar también la pista que va adentro. */
+.deshabilitada {
+  color: var(--gris-300);
+  cursor: not-allowed;
+}
+
+.deshabilitada:hover {
+  background-color: transparent;
+}
+
+.deshabilitada .icono {
+  opacity: 0.5;
+}
+
+.icono {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+}
+
+.separador {
+  height: 1px;
+  margin: var(--space-2) var(--space-4);
+  background-color: var(--verde-600);
+}
+
+/* ---------- Tooltips ---------- */
+
+/* Pista de las opciones deshabilitadas (sidebar expandido) y nombres (sidebar colapsado). */
+.pista,
+.colapsada .etiqueta {
+  position: absolute;
+  top: 50%;
+  left: calc(100% + var(--space-2));
+  z-index: 20;
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radio-boton);
+  background-color: var(--gris-900);
+  color: var(--blanco);
+  font-size: var(--texto-small-tamano);
+  font-weight: 600;
+  line-height: var(--texto-small-altura);
+  white-space: nowrap;
+  box-shadow: var(--sombra-media);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: opacity 0.15s ease;
+}
+
+.deshabilitada:hover .pista,
+.colapsada .opcion:hover .etiqueta,
+.colapsada .opcion:focus-visible .etiqueta {
+  opacity: 1;
+}
+
+/* Colapsado: la pista se muestra dentro del tooltip del nombre, debajo de él. */
+.colapsada .pista {
+  position: static;
+  display: block;
+  padding: 0;
+  background: none;
+  box-shadow: none;
+  color: var(--gris-300);
+  font-size: var(--texto-caption-tamano);
+  font-weight: 400;
+  opacity: 1;
+  transform: none;
+}
